@@ -15,7 +15,7 @@
 		</script>
 		<!-- All in One SEO -->
 
-<link rel="alternate" type="application/rss+xml" title="SoundScribe &raquo; Feed" href="http://192.168.8.131:8000/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SoundScribe &raquo; Feed" href="https://jonnylatola.github.io/soundscribe/feed/" />
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/192.168.8.131:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
 /*! This file is auto-generated */
@@ -35,7 +35,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css' href='http://192.168.8.131:8000/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='wp-block-library-css' href='https://jonnylatola.github.io/soundscribe/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
 <style id='wp-block-library-theme-inline-css' type='text/css'>
 .wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
 </style>
@@ -50,40 +50,40 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='photofocus-style-css' href='http://192.168.8.131:8000/wp-content/themes/photofocus/style.css?ver=20231010-184422' type='text/css' media='all' />
+<link rel='stylesheet' id='photofocus-style-css' href='https://jonnylatola.github.io/soundscribe/wp-content/themes/photofocus/style.css?ver=20231010-184422' type='text/css' media='all' />
 <style id='photofocus-style-inline-css' type='text/css'>
 .custom-header-overlay {
 				background-color: rgba(0, 0, 0, 0.65 );
 		    } 
 </style>
-<link rel='stylesheet' id='musicfocus-style-css' href='http://192.168.8.131:8000/wp-content/themes/musicfocus/style.css?ver=20231010-184417' type='text/css' media='all' />
-<link rel='stylesheet' id='photofocus-block-style-css' href='http://192.168.8.131:8000/wp-content/themes/photofocus/assets/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='musicfocus-block-style-css' href='http://192.168.8.131:8000/wp-content/themes/musicfocus/assets/css/child-blocks.css?ver=20231010-184417' type='text/css' media='all' />
-<link rel='stylesheet' id='photofocus-fonts-css' href='http://192.168.8.131:8000/wp-content/fonts/2a83024167fd76e8a69be4319394745c.css' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css' href='http://192.168.8.131:8000/wp-content/plugins/tablepress/css/build/default.css?ver=2.1.8' type='text/css' media='all' />
-<link rel='stylesheet' id='wavesurfer_font-css' href='http://192.168.8.131:8000/wp-content/plugins/wavesurfer-wp/css/wavesurfer-wp_font.css?ver=6.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wavesurfer_default-css' href='http://192.168.8.131:8000/wp-content/plugins/wavesurfer-wp/css/wavesurfer-wp_default.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='musicfocus-style-css' href='https://jonnylatola.github.io/soundscribe/wp-content/themes/musicfocus/style.css?ver=20231010-184417' type='text/css' media='all' />
+<link rel='stylesheet' id='photofocus-block-style-css' href='https://jonnylatola.github.io/soundscribe/wp-content/themes/photofocus/assets/css/blocks.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='musicfocus-block-style-css' href='https://jonnylatola.github.io/soundscribe/wp-content/themes/musicfocus/assets/css/child-blocks.css?ver=20231010-184417' type='text/css' media='all' />
+<link rel='stylesheet' id='photofocus-fonts-css' href='https://jonnylatola.github.io/soundscribe/wp-content/fonts/2a83024167fd76e8a69be4319394745c.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://jonnylatola.github.io/soundscribe/wp-content/plugins/tablepress/css/build/default.css?ver=2.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wavesurfer_font-css' href='https://jonnylatola.github.io/soundscribe/wp-content/plugins/wavesurfer-wp/css/wavesurfer-wp_font.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wavesurfer_default-css' href='https://jonnylatola.github.io/soundscribe/wp-content/plugins/wavesurfer-wp/css/wavesurfer-wp_default.css?ver=6.3.2' type='text/css' media='all' />
         <script>
             /* <![CDATA[ */
             var rcewpp = {
-                "ajax_url":"http://192.168.8.131:8000/wp-admin/admin-ajax.php",
+                "ajax_url":"https://jonnylatola.github.io/soundscribe/wp-admin/admin-ajax.php",
                 "nonce": "4818ad7b9b",
-                "home_url": "http://192.168.8.131:8000/",
-                "settings_icon": 'http://192.168.8.131:8000/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings.png',
-                "settings_hover_icon": 'http://192.168.8.131:8000/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings_hover.png'
+                "home_url": "https://jonnylatola.github.io/soundscribe/",
+                "settings_icon": 'https://jonnylatola.github.io/soundscribe/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings.png',
+                "settings_hover_icon": 'https://jonnylatola.github.io/soundscribe/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings_hover.png'
             };
             /* ]]\> */
         </script>
         <!--[if lt IE 9]>
-<script type='text/javascript' src='http://192.168.8.131:8000/wp-content/themes/photofocus/assets/js/html5.min.js?ver=3.7.3' id='photofocus-html5-js'></script>
+<script type='text/javascript' src='https://jonnylatola.github.io/soundscribe/wp-content/themes/photofocus/assets/js/html5.min.js?ver=3.7.3' id='photofocus-html5-js'></script>
 <![endif]-->
-<script type='text/javascript' src='http://192.168.8.131:8000/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
-<script type='text/javascript' src='http://192.168.8.131:8000/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
-<link rel="https://api.w.org/" href="http://192.168.8.131:8000/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://192.168.8.131:8000/xmlrpc.php?rsd" />
+<script type='text/javascript' src='https://jonnylatola.github.io/soundscribe/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://jonnylatola.github.io/soundscribe/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://jonnylatola.github.io/soundscribe/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jonnylatola.github.io/soundscribe/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.3.2" />
 	        <style type="text/css" rel="header-image">
 	            .custom-header .wrapper:before {
-	                background-image: url( http://192.168.8.131:8000/wp-content/themes/musicfocus/assets/images/header-image.jpg);
+	                background-image: url( https://jonnylatola.github.io/soundscribe/wp-content/themes/musicfocus/assets/images/header-image.jpg);
 					background-position: center top;
 					background-repeat: no-repeat;
 					background-size: cover;
@@ -98,12 +98,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				}
 				</style>
 		<style type="text/css" id="custom-background-css">
-body.custom-background { background-image: url("http://192.168.8.131:8000/wp-content/uploads/2023/10/US_1.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+body.custom-background { background-image: url("https://jonnylatola.github.io/soundscribe/wp-content/uploads/2023/10/US_1.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
 </style>
-	<link rel="icon" href="http://192.168.8.131:8000/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="http://192.168.8.131:8000/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon" href="http://192.168.8.131:8000/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-180x180.jpg" />
-<meta name="msapplication-TileImage" content="http://192.168.8.131:8000/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-270x270.jpg" />
+	<link rel="icon" href="https://jonnylatola.github.io/soundscribe/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://jonnylatola.github.io/soundscribe/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://jonnylatola.github.io/soundscribe/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://jonnylatola.github.io/soundscribe/wp-content/uploads/2023/10/cropped-cropped-LogoSS-1-270x270.jpg" />
 		<style type="text/css" id="wp-custom-css">
 			div.wpforms-container-full .wpforms-field-label {
 	color: white;
@@ -173,7 +173,7 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 <div class="site-branding">
 	
 	<div class="site-identity">
-					<p class="site-title"><a href="http://192.168.8.131:8000/" rel="home">SoundScribe</a></p>
+					<p class="site-title"><a href="https://jonnylatola.github.io/soundscribe/" rel="home">SoundScribe</a></p>
 			</div><!-- .site-branding-text-->
 </div><!-- .site-branding -->
 
@@ -186,11 +186,11 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 			<div class="menu-inside-wrapper">
 				
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
-						<ul id="primary-menu" class="menu nav-menu"><li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-230"><a href="http://192.168.8.131:8000">Home</a></li>
-<li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-231"><a href="http://192.168.8.131:8000/2023/10/11/audio-gallery/">Audio Gallery</a></li>
-<li id="menu-item-284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-284"><a href="http://192.168.8.131:8000/meet-the-team/">Meet the Team</a></li>
-<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-featured-content menu-item-368"><a href="http://192.168.8.131:8000/featured-content/offerings/">Our Offerings</a></li>
-<li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="http://192.168.8.131:8000/request-download/">Contact Us</a></li>
+						<ul id="primary-menu" class="menu nav-menu"><li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-230"><a href="https://jonnylatola.github.io/soundscribe">Home</a></li>
+<li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-231"><a href="https://jonnylatola.github.io/soundscribe/2023/10/11/audio-gallery/">Audio Gallery</a></li>
+<li id="menu-item-284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-284"><a href="https://jonnylatola.github.io/soundscribe/meet-the-team/">Meet the Team</a></li>
+<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-featured-content menu-item-368"><a href="https://jonnylatola.github.io/soundscribe/featured-content/offerings/">Our Offerings</a></li>
+<li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="https://jonnylatola.github.io/soundscribe/request-download/">Contact Us</a></li>
 </ul>
 				
 					</nav><!-- .main-navigation -->
@@ -200,7 +200,7 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 					<div class="search-container">
 						
 
-<form role="search" method="get" class="search-form" action="http://192.168.8.131:8000/">
+<form role="search" method="get" class="search-form" action="https://jonnylatola.github.io/soundscribe/">
 	<label for="search-form-652ecccf07868">
 		<span class="screen-reader-text">Search for:</span>
 		<input type="search" id="search-form-652ecccf07868" class="search-field" placeholder="Search" value="" name="s" />
@@ -225,7 +225,7 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 				<div class="search-container">
 					
 
-<form role="search" method="get" class="search-form" action="http://192.168.8.131:8000/">
+<form role="search" method="get" class="search-form" action="https://jonnylatola.github.io/soundscribe/">
 	<label for="search-form-652ecccf078a5">
 		<span class="screen-reader-text">Search for:</span>
 		<input type="search" id="search-form-652ecccf078a5" class="search-field" placeholder="Search" value="" name="s" />
@@ -245,7 +245,7 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 	<div class="custom-header header-media">
 	<div class="wrapper">
 		<div class="custom-header-media">
-			<div id="wp-custom-header" class="wp-custom-header"><img src="http://192.168.8.131:8000/wp-content/themes/musicfocus/assets/images/header-image.jpg"/></div>					<div class="custom-header-content sections header-media-section ">
+			<div id="wp-custom-header" class="wp-custom-header"><img src="https://jonnylatola.github.io/soundscribe/wp-content/themes/musicfocus/assets/images/header-image.jpg"/></div>					<div class="custom-header-content sections header-media-section ">
 		<div class="custom-header-content-wrapper">
 			
 			<div class="section-title-wrapper"><h1 class="section-title entry-title">Nothing Found</h1></div>
@@ -278,7 +278,7 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 
 						
 
-<form role="search" method="get" class="search-form" action="http://192.168.8.131:8000/">
+<form role="search" method="get" class="search-form" action="https://jonnylatola.github.io/soundscribe/">
 	<label for="search-form-652ecccf079f4">
 		<span class="screen-reader-text">Search for:</span>
 		<input type="search" id="search-form-652ecccf079f4" class="search-field" placeholder="Search" value="" name="s" />
@@ -317,17 +317,17 @@ div.wpforms-container-full input[type=checkbox]+label, div.wpforms-container-ful
 		<div id="site-generator" class="one">
 			
 			
-<div class="site-info">Copyright &copy; 2023 <a href="http://192.168.8.131:8000/">SoundScribe</a> <span class="sep"> | </span>MusicFocus&nbsp;by&nbsp;<a target="_blank" href="https://catchthemes.com/">Catch Themes</a></div><!-- .site-info -->		</div><!-- #site-generator -->
+<div class="site-info">Copyright &copy; 2023 <a href="https://jonnylatola.github.io/soundscribe/">SoundScribe</a> <span class="sep"> | </span>MusicFocus&nbsp;by&nbsp;<a target="_blank" href="https://catchthemes.com/">Catch Themes</a></div><!-- .site-info -->		</div><!-- #site-generator -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<script>requestAnimationFrame(() => document.body.classList.add( "stk--anim-init" ))</script><script type='text/javascript' src='http://192.168.8.131:8000/wp-content/themes/photofocus/assets/js/skip-link-focus-fix.min.js?ver=201800703' id='photofocus-skip-link-focus-fix-js'></script>
+<script>requestAnimationFrame(() => document.body.classList.add( "stk--anim-init" ))</script><script type='text/javascript' src='https://jonnylatola.github.io/soundscribe/wp-content/themes/photofocus/assets/js/skip-link-focus-fix.min.js?ver=201800703' id='photofocus-skip-link-focus-fix-js'></script>
 <script type='text/javascript' id='photofocus-script-js-extra'>
 /* <![CDATA[ */
 var photoFocusOptions = {"screenReaderText":{"expand":"expand child menu","collapse":"collapse child menu","icon":"<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"},"iconNavPrev":"<svg class=\"icon icon-angle-left\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-left\" xlink:href=\"#icon-angle-left\"><\/use> <span class=\"svg-fallback icon-angle-left\"><\/span><\/svg>","iconNavNext":"<svg class=\"icon icon-angle-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-right\" xlink:href=\"#icon-angle-right\"><\/use> <span class=\"svg-fallback icon-angle-right\"><\/span><\/svg>","rtl":"","dropdownIcon":"<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://192.168.8.131:8000/wp-content/themes/photofocus/assets/js/functions.min.js?ver=201800703' id='photofocus-script-js'></script>
+<script type='text/javascript' src='https://jonnylatola.github.io/soundscribe/wp-content/themes/photofocus/assets/js/functions.min.js?ver=201800703' id='photofocus-script-js'></script>
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-behance" viewBox="0 0 37 32">
