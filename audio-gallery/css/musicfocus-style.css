@@ -917,3 +917,7 @@ body #page .solid-button:focus,
 		color: #ff2e55;
 	}
 }
+
+.wavesurfer-block wavesurfer-audio {
+	height: 50px;
+}
