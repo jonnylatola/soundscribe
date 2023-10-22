@@ -232,3 +232,11 @@ button.wavesurfer-mute.wavesurfer-active-button:before {
 .wavesurfer-block .wavesurfer-player wave {
   overflow: hidden!important;
 }
+
+.wavesurfer-player-0 {
+  display: block;
+  position: relative;
+  user-select: none;
+  height: 50px;
+  overflow: auto hidden;
+}
