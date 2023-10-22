@@ -233,7 +233,7 @@ button.wavesurfer-mute.wavesurfer-active-button:before {
   overflow: hidden!important;
 }
 
-.wavesurfer-player-0 {
+.wavesurfer-block .wavesurfer-player wave {
   display: block;
   position: relative;
   user-select: none;
