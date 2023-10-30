@@ -1,0 +1,1791 @@
+/*
+Theme Name: eConsulting Agency
+Template: bizberg
+Text Domain: econsulting-agency
+Author: bizbergthemes
+Author URI: https://bizbergthemes.com/
+Theme URI: https://bizbergthemes.com/downloads/econsulting-agency/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: eConsulting Agency is a free Consulting WordPress theme oriented to consulting, digital marketing, business and financial services. It is perfect platform to create a professional website for business consultant, accountants, investment firms, insurance, tax advisor, startups, financial advisor, marketing and any other consultancy corporations. This is a versatile, tech-savvy and responsive multipurpose website theme that is developed to satisfy all business needs. This theme can also be used for corporate, business, personal blog, law firm, banking, ecommerce, fashion blog, yoga, charity, gym, travel, news, education, transport and any other general business needs. This theme is the perfect and reliable toolkit for crafting impressive websites to grow your online business. This Free WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. If you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.4
+Tested up to: 5.8
+Requires PHP: 5.6
+*/
+
+.blog_listing_grid_two_column .entry-meta{
+	font-size: 90%;
+}
+
+div#respond h3#reply-title{
+	text-transform: capitalize;
+}
+
+.navbar-default .navbar-nav>li>a{
+	letter-spacing: 0;
+}
+
+/* econsult-banner */
+
+.econsult-banner{
+	padding: 50px 0;
+}
+
+.econsult-banner .row {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+@-webkit-keyframes border-transform {
+    0%,
+    to {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%
+    }
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%
+    }
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%
+    }
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%
+    }
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%
+    }
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%
+    }
+}
+
+@keyframes border-transform {
+    0%,
+    to {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%
+    }
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%
+    }
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%
+    }
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%
+    }
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%
+    }
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%
+    }
+}
+
+.econsult-banner-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    animation: border-transform 10s linear infinite alternate forwards;
+    position: relative;
+    right: -10%;
+}
+
+.econsult-banner-content{
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.econsult-banner-btn, .econsult-det{
+	display: flex;
+	align-items: center;
+    position: relative;
+}
+
+.per-btn,
+.per-btn:focus {
+    position: relative;
+    padding: 16px 19px 18px 23px;
+    transition: all .2s ease;
+    display: flex;
+    margin-right: 20px;
+    color: #222;
+    align-items: baseline;
+}
+
+.per-btn:hover i {
+    transform: translateX(0);
+}
+
+.per-btn:hover{
+    color: #fff !important;
+}
+
+.per-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #ff4a17;
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+
+.per-btn span {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.per-btn i {
+    position: relative;
+    top: 1px;
+    margin-left: 10px;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+    font-size: 15px;
+}
+
+.per-btn:hover::before {
+    width: 100%;
+    background: #ff4a17;
+}
+
+.econsult-det i {
+    background: #FFEDE7;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 15px;
+    color: #ff4a17;
+}
+
+.econsult-det p {
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+    padding-top: 7px;
+}
+
+.econsult-det p span {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    color: #8A8A8A;
+}
+
+@media(max-width: 1100px){
+    .econsult-banner .row{
+        display: block;
+    }
+
+    .econsult-banner .row .col-md-6{width: 100%;}
+
+    .econsult-banner-image{
+        right: 0;
+        width: 500px;
+        height: 500px;
+        left: 0;
+        margin: 0 auto 30px;
+    }
+
+    .econsult-banner-content{text-align: center;padding-top: 25px;}
+
+    .econsult-banner-btn{justify-content: center;}
+
+}
+
+@media(max-width: 767px){
+    .per-btn, .per-btn:focus{
+        display:inline-flex;
+    }
+}
+
+@media(max-width: 567px){
+    .econsult-banner .row, .econsult-banner-btn{
+       display: block;
+    }
+
+    .econsult-banner-content{text-align: center;}
+
+    .econsult-banner-image{
+        right: 0;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        margin:0 auto 30px;
+    }
+
+    .econsult-det.custom_field {
+        margin-top: 15px;
+    }
+
+    .econsult-banner-btn .button_wrapper, .econsult-banner-btn .custom_field{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* econsult counter */
+
+
+.econsult-counter-in{
+    margin: 0;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat( auto-fit,minmax(100px,1fr) );
+    grid-auto-rows: 1fr;
+    grid-row-gap: 5px;
+    background: #ff4a17;
+    padding: 50px 0;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.econsult-counter-in .col-md-3.col-sm-6 {
+    width: 100%;
+}
+
+.econsult-counter-in .d-line {
+    border-right: 1px solid #fa8361;
+}
+
+.econsult-counter-in .counter-item{
+    text-align: center;
+    padding:0px 20px;
+}
+
+.econsult-counter-in h2{
+    padding: 7px 0 9px;
+}
+
+.econsult-counter-in h2, 
+.econsult-counter-in i,
+.econsult-counter-in p{color: #fff;}
+
+body .econsult-banner-content h4 {
+    font-size: 90% !important;
+    padding-bottom: 25px;
+    color: #222222;
+    position: relative;
+}
+
+body .econsult-banner-content h1 {
+    padding-bottom: 25px;
+    color: #222222;
+    line-height: 62px !important;
+}
+
+body .econsult-banner-content h1 span {
+    color: #ff4a17;
+}
+
+.econsulting_agency_homepage.home header#masthead{
+    border-bottom: none;
+}
+
+#tf-partical-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.tf-ball {
+    position: absolute;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+.econsult-counter-in i{
+    font-size: 40px;
+}
+
+.econsult-counter {
+    padding: 40px 0;
+}
+
+@media (max-width: 991px) {
+    .econsult-counter-in{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .econsult-counter-in .col-md-3.col-sm-6{margin-bottom: 30px; width: 50%;}
+
+    .econsult-counter-in .d-line{border: none!important;}
+}
+@media(max-width: 767px){
+    .econsult-counter-in .col-md-3.col-sm-6{width: 100%;}
+}
+
+/* econsult services */
+
+.econsult-services{
+    padding: 80px 0 40px;
+}
+
+.econsult-services-main{
+    margin: 0;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 5px;
+    align-items: end;
+}
+
+.econsult-services-main .econsult-col{margin-bottom: 30px; width: 100%; display: flex;}
+
+.econsult-services-in .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.econsult-services-in .section-title p,
+.econsult-works .section-title p,
+.econsult-our-process .section-title p,
+.econsult-testi .section-title p,
+.econsult-faq .section-title p.sub,
+.econsult-partner .section-title p,
+.econsult-contact .section-title p,
+.econsult-pricing .section-title p {
+    position: relative;
+    background: #ff4a171a;
+    padding: 6px 20px 3px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #ff4a17;
+}
+
+.econsult-services-item{
+    background: #fff;
+    padding: 40px 30px 20px;
+    box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
+    transition: all ease-in-out 0.5s;
+    text-align: center;
+}
+
+.econsult-services-icon i{
+    font-size: 48px;
+    transform: scale(1) rotateY(0deg);
+    transition: all ease-in-out 0.5s;
+    color: #ff4a17;
+}
+
+.econsult-services-item:hover .econsult-services-icon i{
+    transform: scale(.9) rotateY(360deg);
+    transition: all ease-in-out 0.5s;
+    color: #222222;
+}
+
+.econsult-services-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease-in-out 0.5s;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.econsult-services-item:hover .econsult-services-btn a{
+    transition: all ease-in-out 0.5s;
+    color: #ff4a17;
+}
+
+.econsult-services-btn a i {
+    border-radius: 50%;
+    background: #ff4a171a;
+    width: 30px;
+    transition: all ease-in-out 0.5s;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.econsult-services-item:hover .econsult-services-btn a i{
+    transition: all ease-in-out 0.5s;
+    background: #ff4a17;
+    color: #fff;
+}
+
+.econsult-services-item:hover{
+    box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 10%);
+    transition: all ease-in-out 0.5s;
+}
+
+.econsult-services-in h2,
+.econsult-our-process h2,
+.econsult-testi .section-title h2,
+.econsult-partner .section-title h2 {
+    color: #000;
+}
+
+.econsult-services-in .econsult-services-icon{
+    margin-bottom: 25px;
+}
+
+.econsult-services-in .econsult-services-content h4 {
+    font-size: 25px !important;
+    margin-bottom: 25px;
+    line-height: 1.2 !important;
+}
+
+.econsult-services-in .econsult-services-content p{
+    line-height: 1.6 !important;
+}
+
+.econsult-services-in .econsult-services-content h4 a{
+    color: #000;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.econsult-services-item:hover h4 a{
+    color: #ff4a17;
+}
+
+@media (max-width:1100px ) {
+    .econsult-services-main, .econsult-services-main .econsult-col{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+
+}
+
+@media (max-width:639px ) {
+    .econsult-services-main, .econsult-services-main .econsult-col{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+
+}
+
+.econsult-works {
+    background: #343a40;
+    padding: 60px 0 100px;
+}
+
+.econsult-works .section-title {
+    text-align: center;
+}
+
+.item_image {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.work_slider {
+    margin-top: 60px;
+}
+
+.work_slider .slick-slide {
+    margin-left: 15px;
+    margin-right:15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work_slider .slick-slide .item_image {
+    -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.work_slider .slick-slide:hover .item_image {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
+}
+
+.work_slider .title_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    opacity: 0;
+    z-index: 1;
+}
+
+.work_slider .slick-slide:hover .title_wrapper{
+    opacity: 1;
+}
+
+.work_slider .title_wrapper span a,
+.work_slider .title_wrapper h4 a {
+    color: #fff !important;
+}
+
+.work_slider .position-cover{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 0%);
+    -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.work_slider .slick-slide:hover .position-cover {
+    background: rgb(0 0 0 / 50%);
+}
+
+.work_slider .slick-dots li button:before {
+    color: #ff4a17c7;
+    font-size: 14px;
+}
+
+.work_slider .slick-dots li.slick-active button:before{
+    color: #ff4a17;
+}
+
+.econsult-our-process{
+    padding: 60px 0 100px;
+}
+
+.econsult-our-process .row{
+    display: flex;
+}
+
+.econsult-our-process .process_image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.econsult-our-process .process_content {
+    background: #343a40;
+    padding: 90px 70px;
+    margin-left: -100px;
+    margin-bottom: -40px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.econsult-our-process .section-title{
+    margin-left: 20px;
+}
+
+.process_content_items {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.process_content_items:last-child{
+    margin-bottom: 0;   
+}
+
+.process_content_items_icon span {
+    background: #f44336;
+    width: 100px;
+    display: flex;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 25px;
+    border: 6px solid #343a40;
+    font-family: 'MontserratRegular';
+}
+
+.process_content_items_icon {
+    border: 2px solid #40484f;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.process_content_items_content h4 {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 22px !important;
+}
+
+.process_content_items_content p {
+    line-height: 1.4;
+}
+
+.process_content_items_icon::after {
+    content: '';
+    border-right: 2px solid #40484f;
+    height: 100%;
+    left: 50px;
+    position: absolute;
+    width: 1px;
+    z-index: 0;
+}
+
+.process_content_items:last-child .process_content_items_icon:after{
+    border-right: none;
+}
+
+@media(max-width: 991px){
+    .econsult-our-process .row{display: block;}
+    .econsult-our-process .process_content{margin:30px 0 0;}
+}
+
+@media(max-width: 767px){
+    .econsult-our-process .process_content{padding:80px 40px;}
+}
+
+@media(max-width: 567px){
+    .process_content_items {display: block;}
+    .process_content_items_icon, .process_content_items_content{border: none!important; text-align: center;}
+    .process_content_items_icon{margin:0 0 15px;}
+    .process_content_items_icon span{display: inline-block; line-height: 3.5;}
+    .process_content_items_icon::after{display: none;}
+}
+
+.econsult-about-us .about-us-content{
+    background: #343a40;
+    padding: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.econsult-about-us .about-us-content h4,
+.econsult-about-us .about-us-content {
+    color: #fff;
+}
+
+.econsult-about-us .about-us-content h4{
+    padding-bottom: 25px;
+}
+
+.econsult-about-us .about-us-content p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.econsult-about-us .button_wrapper a{
+    color: #fff !important;
+}
+
+.econsult-about-us .button_wrapper {
+    display: flex;
+}
+
+.econsult-about-us {
+    display: flex;
+    padding: 0px 0 70px;
+}
+
+.econsult-about-us .row {
+    height: 100%;
+    display: flex;
+}
+
+.econsult-about-us .about-us-image{
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.econsult-about-us .row .abt_image_wrapper {
+    padding-right: 0;
+}
+
+.about-us-content-wrapper{
+    padding-left: 0;
+}
+
+@media(max-width: 991px){
+    .econsult-about-us .row{display: block;}
+    .econsult-about-us .row .abt_image_wrapper{padding-right: 15px;}
+    .about-us-content-wrapper{padding-left: 15px;}
+    .econsult-about-us .about-us-image{
+        height: 400px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .econsult-about-us .about-us-content{
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+@media (max-width: 639px) {
+    .econsult-about-us .about-us-content{padding: 40px;}   
+}
+
+.econsult-works .items_slide {
+    overflow: hidden;
+    position: relative;
+}
+
+.work_slider{
+    display: none;
+}
+
+.work_slider.slick-initialized {
+    display: block;
+}
+
+.econsult-call-to-action {
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.econsult-call-to-action h2 {
+    color: #fff;
+}
+
+.econsult-call-to-action .container {
+    z-index: 1;
+    position: relative;
+}
+
+.econsult-call-to-action .overlay{
+    background: #191825b3;
+}
+
+.econsult-call-to-action .container {
+    z-index: 1;
+    position: relative;
+}
+
+.econsult-call-to-action h2 {
+    font-size: 50px !important;
+    line-height: 1.1 !important;
+}
+
+.econsult-call-to-action .button_wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.econsult-call-to-action .button_wrapper .per-btn {
+    color: #fff !important;
+}
+
+.econsult-call-to-action > .container > .row {
+    display: flex;
+    align-items: center;
+}
+
+.econsult-call-to-action .row > div {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.econsult-video-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 112px;
+    line-height: 112px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(25 24 37 / 15%);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.econsult-video-btn:before {
+    position: absolute;
+    top: -17px;
+    left: -17px;
+    right: -17px;
+    bottom: -17px;
+    content: "";
+    border-radius: 50%;
+    z-index: 1;
+    border: 3px solid #ff4a17;
+}
+
+.econsult-call-to-action a:hover .econsult-video-btn{
+    background-color: rgb(25 24 37 / 100%);
+} 
+
+.econsult-call-to-action .ripple, 
+.econsult-call-to-action .ripple:before, 
+.econsult-call-to-action .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 146px;
+    height: 146px;
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(255, 97, 60, 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(255, 97, 60, 0.6);
+    box-shadow: 0 0 0 0 rgba(255, 97, 60, 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+    border-radius: 50%;
+}
+
+.econsult-call-to-action .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.econsult-call-to-action .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+@-webkit-keyframes ripple {
+    70% {
+        box-shadow: 0 0 0 40px rgba(10, 165, 205, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(10, 165, 205, 0);
+    }
+}
+
+@keyframes ripple {
+    70% {
+        box-shadow: 0 0 0 40px rgba(10, 165, 205, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(10, 165, 205, 0);
+    }
+}
+
+@keyframes modal-video {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-video-inner {
+  from {
+    transform: translate(0, 100px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000000;
+  cursor: pointer;
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.modal-video-close {
+  opacity: 0;
+}
+
+.modal-video-close .modal-video-movie-wrap {
+  -webkit-transform: translate(0, 100px);
+  -moz-transform: translate(0, 100px);
+  -ms-transform: translate(0, 100px);
+  -o-transform: translate(0, 100px);
+  transform: translate(0, 100px);
+}
+
+.modal-video-body {
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.modal-video-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (orientation: landscape) {
+  .modal-video-inner {
+    padding: 10px 60px;
+    box-sizing: border-box;
+  }
+}
+
+.modal-video-movie-wrap {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  background-color: #333;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video-inner;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -ms-transition: -ms-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.modal-video-movie-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-video-close-btn {
+  position: absolute;
+  z-index: 2;
+  top: -45px;
+  right: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+}
+
+@media (orientation: landscape) {
+  .modal-video-close-btn {
+    top: 0;
+    right: -45px;
+  }
+}
+
+.modal-video-close-btn:before {
+  transform: rotate(45deg);
+}
+
+.modal-video-close-btn:after {
+  transform: rotate(-45deg);
+}
+
+.modal-video-close-btn:before, .modal-video-close-btn:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: -6px;
+}
+
+@media(max-width: 991px){
+    .econsult-call-to-action > .container > .row{display: block; text-align: center;}
+    .econsult-call-to-action .row > div.icon_wrapper{margin-top: 60px}
+
+    .econsult-call-to-action .button_wrapper{justify-content: center;}
+
+    .econsult-video-btn{
+        height: 90px;
+        width: 90px;
+    }
+
+    .econsult-call-to-action .ripple, .econsult-call-to-action .ripple:before, 
+    .econsult-call-to-action .ripple:after{
+        width: 124px;
+        height: 124px;
+    }
+}
+
+/* econsult testimonials */
+.econsult-testi{
+    background-image: url(./../images/testimonial.png);
+    padding: 80px 0;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.econsult-testi .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.econsult-testi-details  {
+    position: relative;
+    display: block;
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 50px 60px;
+    transition: all 500ms ease;
+    text-align: left;
+}
+.econsult-testi-details::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff4a17;
+    transition: all ease 0.5s;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.econsult-testi-details:hover::before {
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+
+.econsult-testi-author {
+    margin-top: -40px;
+    text-align: left;
+    padding-left: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.econsult-testi-author img {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    width: 90px;
+}
+
+/* econsult calltoaction */
+
+.econsult-callto{
+    padding:0;
+    margin-bottom: -80px; 
+}
+
+.econsult-callto-main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff4a17;
+    padding:80px 60px;
+    border-radius: 20px;
+}
+
+.econsult-callto-main .econsult-callto-icon i, .econsult-callto-main h2{
+    color: #fff;
+}
+
+.econsult-callto-main .econsult-callto-icon i{
+    font-size: 54px;
+}
+
+.econsult-callto-main h2{padding: 0 30px;}
+
+.econsult-callto-main .per-btn{
+    white-space: nowrap;
+}
+
+.econsult-callto-main .per-btn::before{
+    background: #fff;
+}
+
+.econsult-callto-main .per-btn:hover::before {
+    width: 100%;
+    background: #fff;
+}
+
+.econsult-callto-main .per-btn:hover {
+    color: #000 !important;
+}
+
+@media(max-width: 991px){
+    .econsult-callto-main{
+        display: inline-block;
+        text-align: center;
+        padding: 40px;
+        width: 100%;
+    }
+
+    .econsult-callto-main h2{margin: 30px 0;}
+
+    .econsult-callto-main .button{display: inline-flex;}
+}
+
+.econsult-faq{
+    padding:160px 0 80px;
+    background: #f5f4f4;
+}
+
+.econsult-faq-main{
+    margin: 0;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat( auto-fit,minmax(100px,1fr) );
+    grid-auto-rows: 1fr;
+    grid-row-gap: 5px;
+    align-items: start;
+    border-radius: 20px;
+}
+
+.econsult-faq .section-title{
+    margin-right: 15px;
+}
+
+.econsult-faq-accordion{
+    margin-left: 15px;
+} 
+
+.econsult-faq-accordion .panel{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.econsult-faq-accordion .panel-heading{
+    padding: 0;
+}
+
+.econsult-faq-accordion .panel-heading a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 20px 40px 20px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+    border-top: 1px solid #f5f4f4;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.econsult-faq .active .accordion-toggle{
+    padding-top: 35px;
+}
+
+.econsult-faq-accordion .panel-heading a:focus {
+    outline: none;
+}
+
+.econsult-faq .section-title h2{
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.econsult-faq .panel-body {
+    padding: 0 40px 25px;
+    border: none !important;
+}
+
+.econsult-faq .panel.active:before {
+    transform: scaleY(1);
+}
+
+.econsult-faq .panel{
+    position: relative;
+}
+
+.econsult-faq .panel:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 2px;
+    content: "";
+    background-color: #ff4a17;
+    transform: scaleY(0);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.econsult-faq .panel.active h4 a{
+    pointer-events: none;
+    color: #ff4a17;
+}
+
+.econsult-faq .panel .fas::before {
+    content: '\f067';
+}
+
+.econsult-faq .panel.active .fas::before {
+    content: '\f068';
+}
+
+@media(max-width: 991px){
+    .econsult-faq-main{display: block;}
+
+    .econsult-faq-accordion{margin: 30px 0 0;}
+}
+
+/* econsult partner */
+
+.econsult-partner{
+    padding: 80px 0;
+}
+
+.econsult-partner .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.econsult-partner-main{
+    margin: 0;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 0;
+    align-items: center;
+}
+
+.econsult-partner-in{
+    border: 1px solid #f1f1f1;
+    padding: 40px 0;
+}
+.econsult-partner-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.econsult-partner-img{
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    transition: opacity .15s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.econsult-partner-mainimg {
+    position: relative;
+    display: block;
+}
+
+.econsult-partner-mainimg img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .6;
+    max-height: 45px;
+    width: auto;
+}
+
+.econsult-partner-hoverimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+
+.econsult-partner-hoverimg img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+    max-height: 45px;
+    width: auto;
+}
+
+.econsult-partner-hoverimg, .econsult-partner-mainimg{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.econsult-partner-img:hover .econsult-partner-mainimg {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.19, .65, .02, .93);
+    transition: transform .6s cubic-bezier(.19, .65, .02, .93);
+}
+
+.econsult-partner-img:hover .econsult-partner-hoverimg{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.19, .65, .02, .93);
+    transition: transform .6s cubic-bezier(.19, .65, .02, .93);
+}
+
+@media(max-width: 1100px){
+    .econsult-partner-main{
+        grid-template-columns: repeat(3, 1fr)!important;
+    }
+}
+
+@media(max-width: 991px){
+    .econsult-partner-main{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}
+
+@media (max-width: 639px) {
+     .econsult-partner-main{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
+
+/* econsult contact */
+
+.econsult-contact{
+    padding: 80px 0 160px;
+    background:#343a40;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image:linear-gradient(to right,rgb(0 0 0 / 90%),rgb(0 0 0 / 90%)),url( images/shape-1.png );
+}
+
+
+.econsult-contact .section-title p{
+    background: #1c2126;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: rgb(255, 74, 23);
+    padding: 6px 20px 3px;
+}
+
+.econsult-contact .section-title span {
+    color: #ffffff;
+    padding-top: 20px;
+    display: block;
+}
+
+.econsult-contact .section-title h2{color: #fff; line-height: 1.3;}
+
+.econsult-contact-main {
+    margin: 0 0 80px 0;
+    display: flex;
+    position: relative;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.econsult-contact-in{
+    border-top: 1px solid #30303b;
+    padding-top: 80px;
+}
+
+.econsult-contact-in h2{color: #fff; text-align: center; margin-bottom: 50px;}
+
+.econsult-contact-address{
+    margin: 0 -15px;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 0;
+    align-items: center;
+}
+
+.econsult-contact-item{
+    position: relative;
+    display: block;
+    background-color: #0c0c0c;
+    padding: 36px 40px 29px;
+    margin: 0 15px 30px;
+}
+
+.econsult-contact-item .contact-title {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.econsult-contact-item .contact-text {
+    color: #a5a3b5;
+}
+
+.econsult-contact-main .section-title {
+    width: 35%;
+}
+
+.econsult-contact-form {
+    width: 60%;
+}
+
+/* econsult map */
+
+.econsult-map{
+    padding: 0 0 80px;
+}
+
+.econsult-map .map{margin-top: -80px;}
+
+.econsult-map .map iframe{border: none; width:100%;}
+
+.econsult-contact-main h2{
+    padding-top: 10px;
+}
+
+/* econsult pricing */
+
+.econsult-pricing{
+    padding: 80px 0 0;
+}
+
+.econsult-pricing .section-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.econsult-pricing-main{
+    margin: 0 -15px;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat( auto-fit,minmax(100px,1fr) );
+    grid-auto-rows: 1fr;
+    grid-row-gap: 5px;
+    align-items: end;
+}
+
+.econsult-pricing-item{
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    box-shadow: 6px 5px 30px rgb(0 0 0 / 12%);
+    transition: 0.5s;
+    margin: 0 15px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.econsult-pricing-item .pricing-header{
+    padding-bottom:30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.econsult-pricing-item .pricing-header .pricing-tag{
+    padding: 7px 14px 6px 20px;
+    margin-top: 20px;
+    border-radius: 21px 0px 0px 21px;
+    color: #fff;
+    background:#ff4a17;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.econsult-pricing-item span.pricing_currency{
+    display: inline-block;
+    vertical-align: super;
+    font-weight: 600;
+    color: #ff4a17;
+    font-size: 24px;
+}
+
+.econsult-pricing-item .pricing-price{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    vertical-align: baseline;
+    font-size: 3em !important;
+}
+
+.econsult-pricing-item .pricing-price span{
+    vertical-align: super;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.econsult-pricing-item .pricing-content li{line-height: 2.5;}
+
+.econsult-pricing-item .pricing-footer{
+    margin-top: 30px;
+}
+
+
+.econsult-pricing-item.pricing-recommended{
+    background: #343a40;
+}
+
+.econsult-pricing-item.pricing-recommended .pricing-header{
+    border-color:#5a626a ;
+}
+
+.econsult-pricing-item.pricing-recommended .pricing-header h4,
+.econsult-pricing-item.pricing-recommended .pricing-content li,
+.econsult-pricing-item.pricing-recommended .pricing-footer .per-btn{color: #fff!important;}
+
+.customize-partial-edit-shortcut-econsulting_agency_banner_custom_field_value,
+.customize-partial-edit-shortcut-econsulting_agency_banner_custom_field_label,
+.customize-partial-edit-shortcut-econsulting_agency_banner_custom_field_icon {
+    top: 0;
+}
+
+.customize-partial-edit-shortcut-econsulting_agency_banner_subtitle {
+    top: -15px;
+}
+
+.customize-partial-edit-shortcut-econsulting_agency_our_work_subtitle {
+    top: 0;
+    left: 15px;
+}
+
+.work_slider_wrapper {
+    position: relative;
+}
+
+.customize-partial-edit-shortcut-econsulting_agency_our_work_list{
+    left: 50%;
+    top: -20px;
+}
+
+.econsult-services-btn {
+    border-top: 1px solid #f1f1f1;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+.customize-partial-edit-shortcut-econsulting_agency_services_list,
+.customize-partial-edit-shortcut-econsulting_agency_work_process_subtitle,
+.customize-partial-edit-shortcut-econsulting_agency_pricing_list,
+.customize-partial-edit-shortcut-econsulting_agency_partners_list,
+.customize-partial-edit-shortcut-econsulting_agency_contact_list {
+    top: 0;
+}
+
+.testi-slider {
+    display: none;
+}
+
+.testi-slider.slick-initialized {
+    display: block;
+}
+
+.econsult-pricing .econsult-pricing-main .pricing-footer .per-btn{
+    display: inline;
+}
+
+.econsult-pricing .section-title h2 {
+    padding-bottom: 10px;
+}
+
+@media(max-width: 1100px){
+    .econsult-pricing-main{grid-template-columns: repeat(1, 1fr)!important; padding: 0 100px; grid-auto-rows: 0fr; }
+
+    .econsult-pricing-item{margin: 0 0 30px;}
+}
+
+@media(max-width: 991px){
+
+    .econsult-pricing-main{padding: 0 50px;}
+}
+
+@media(max-width: 639px){
+
+    .econsult-pricing-main{padding: 0 15px;}
+}
+
+.econsult-contact-form label{
+    color: #fff;
+}
+
+.econsult-contact-form input,
+.econsult-contact-form textarea {
+    margin-bottom: 10px;
+    background: #0c0c0c;
+    border-color: #2a2a2a;
+    color: #fff;
+    padding: 15px;
+}
+
+.econsult-contact-form input:focus{
+    color: #fff;
+}
+
+.econsult-contact-form .wpcf7 form .wpcf7-response-output{
+    margin: 15px 0 0 0;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.econsult-contact-form .wpcf7 form .wpcf7-submit{
+    padding: 20px 60px;
+}
+
+.contact-info a {
+    display: block;
+}
+
+.navbar-nav li ul li a {
+    font-size: 14px;
+}
+
+.econsult-banner::after {
+    content: '';
+    background: url(./../images/banner_ils.png) no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@media (min-width: 1101px) and (max-width: 1199px){
+    .econsult-banner-btn, .econsult-det {
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .econsult-det{
+        flex-direction: row;
+    }
+    .econsult-banner-btn {
+        gap: 15px;
+    }
+    .econsult-contact-address {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+    header .navbar .slicknav_nav {
+        max-height: fit-content;
+    }
+    .econsult-banner::after{
+        top: -25px;
+    }
+}
+
+@media(max-width: 1100px){
+    .econsult-contact-address{grid-template-columns: repeat(3, 1fr)!important;}
+}
+
+@media (max-width: 991px) {
+    .econsult-contact-main, .econsult-contact-address{display: block;}
+
+    .econsult-contact-address{margin: 0;}
+
+    .econsult-contact-main .section-title, .econsult-contact-form{width: 100%;}
+
+    .econsult-contact-form{margin-top: 30px;}
+    #blog.blog-detail-page {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .econsult-pricing-item{padding: 30px; margin: 0 15px 30px;}
+}
+
+@media (max-width: 480px) {
+    body .econsult-banner-content h1 {
+        line-height: 50px !important;
+    }
+    .econsult-callto-main h2{
+        font-size: 30px !important;
+    }
+    .econsult-callto-main h2 {
+        padding: 0;
+    }
+}
