@@ -57,6 +57,145 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
     
 <!--Start of About Us section-->
 
+<style>
+
+section {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  border-radius:15px;
+  border:1px solid darkred;
+  padding: 40px 40px 40px;
+  color:lightgrey;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #1c1414;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #1c1212;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #231515;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: #2c1919;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: #331a1a;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+
+</style>
+
+<section>
+    <input type="radio" name="position" checked />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <main id="carousel">
+      <div class="item"><p>About SoundScribe<p></p>At Sounscribe, we are passionate about the powerful language of music. Established in 2022, we are a team of three musicians who have been close friends for over a decade. Each of us brought our unique musical talents to the table, having worked individually with prominent artists in South Africa. Our journeys were separate, but they converged into a shared vision.
+  </p></div>
+    <div class="item"><p>Our Story<p></p>With backgrounds in various musical genres and experiences working with renowned artists, we realized that our collective strength lay in orchestration. It was this realization that sowed the seeds for Sounscribe. Drawing upon our individual strengths, we decided to explore the world of film, advertisements, and visual content creation.
+  <p></p>
+  Since our inception, we have harmonized our talents, infusing our compositions with the rich tapestry of experiences gained from years in the music industry. Our friendship, mutual respect, and shared love for storytelling through music are the cornerstones of Sounscribe.</p></div>
+  <div class="item"><p>What We Do<p></p>Film Score: We understand that every frame tells a story, and our original compositions are designed to complement and amplify the emotions on screen. Whether it's an epic adventure or an intimate drama, we have the perfect sound to enhance your vision.
+        <p></p>
+  Ad Campaigns: In the fast-paced world of advertising, the right music can make a world of difference. We create memorable, catchy, and emotionally resonant jingles that leave a lasting impact.
+        <p></p>
+  Visual Content: From documentaries to video games, we're adept at tailoring music to suit the unique demands of any visual project. Our versatile team ensures that the music always fits the mood and narrative.</p></div>
+  <div class="item"><p>Our Approach<p></p>
+  
+  We believe that music is not just an accompaniment; it's a partner in storytelling. Every composition we create is a result of meticulous attention to detail, collaboration, and a deep understanding of the client's vision. We work closely with content creators to ensure that our music becomes an integral part of the narrative.</p></div>
+  <div class="item"><p>Why Choose Sounscribe<p></p>
+  
+  Emotional Impact: We understand that music has the power to move, inspire, and captivate. Our compositions are meticulously designed to bring out the desired emotions in every scene.
+    <p></p>
+  Professional Excellence: With years of experience and a team of dedicated professionals, we ensure that every piece of music we create is of the highest quality.
+  <p></p>
+  Collaborative Partnership: We value our clients as partners and work hand-in-hand to bring their visions to life through music.</p>
+  </div>
+      <main>
+  </section>
 
 <!--End of About Us section-->
     
