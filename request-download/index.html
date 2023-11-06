@@ -5,8 +5,8 @@
 
 <script>
     function sendEmail() { 
-	const email = document.getElementById("wpforms-23-field_10").value;
-	const message = document.getElementById("wpforms-23-field_5").value;
+	const email = document.getElementById("email").value;
+	const message = document.getElementById("message").value;
 		if (email && message)
           	Email.send({ 
             	Host: "smtp.elasticemail.com", 
@@ -14,7 +14,7 @@
             	Password: "D33FE948765191E006BEA32B49E4C4E090D1", 
             	To: "inquiries@soundscribe.co.za", 
             	From: "jonathan@latechops.co.za", 
-            	Subject: document.getElementById("wpforms-23-field_1").value, 
+            	Subject: "New Inquiry | SoundScribe", 
             	Body: "Email: " + email + "<br/>" + message,
           	}) 
             	.then(function (message) { 
