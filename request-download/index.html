@@ -6,7 +6,7 @@
 <script type="text/javascript">
     function sendEmail() { 
 	const email = document.getElementById("email").value;
-	const message = document.getElementById("message").value;
+	var message = document.getElementById("message").value;
 		if (email && message)
           	Email.send({ 
             	Host: "smtp.elasticemail.com", 
@@ -17,7 +17,7 @@
             	Subject: "New Inquiry | SoundScribe", 
             	Body: "Email: " + email + "<br/>" + message,
           	}) 
-            	.then(function (message) { 
+            	.then(function (message1) { 
 	              swal("Thank you!", "Mail successfully sent.", "success") 
 	            }); 
 		else {
