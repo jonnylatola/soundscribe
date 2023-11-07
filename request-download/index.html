@@ -3,7 +3,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-<script>
+<script type="text/javascript">
     function sendEmail() { 
 	const email = document.getElementById("email").value;
 	const message = document.getElementById("message").value;
@@ -12,7 +12,7 @@
             	Host: "smtp.elasticemail.com", 
             	Username: "jonathan@latechops.co.za", 
             	Password: "D33FE948765191E006BEA32B49E4C4E090D1", 
-            	To: "inquiries@soundscribe.co.za", 
+            	To: "enquiries@soundscribe.co.za", 
             	From: "jonathan@latechops.co.za", 
             	Subject: "New Inquiry | SoundScribe", 
             	Body: "Email: " + email + "<br/>" + message,
