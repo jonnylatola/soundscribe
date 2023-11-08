@@ -75,7 +75,7 @@ var stackable = {"restUrl":"http:\/\/192.168.8.131:8000\/wp-json\/","i18n":[]};
 </blockquote>
 
 
-	<form action="" method="post">
+	<form id="contact-form" action="" method="post">
 		<!--  General -->
 		<div class="form-group">
 		  <h2 class="heading">Booking & contact</h2>
@@ -103,7 +103,7 @@ var stackable = {"restUrl":"http:\/\/192.168.8.131:8000\/wp-json\/","i18n":[]};
 				<textarea name="comments"  id="message"></textarea>
 				<label for="comments">Comments</label>
 				</div></div><p></p>
-				  <button id="letsgo" onclick="sendEmail()">Submit</button>
+				  <button type="button" class="wpcf7-form-control has-spinner wpcf7-submit" onclick="sendEmail()">Submit</button>
 			</div>  
 		</div> <!-- /.form-group -->
 	  </form>
