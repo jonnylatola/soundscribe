@@ -180,7 +180,29 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
     
     </style>
     
-    <div id="carousel123">
+    <script>
+
+        const slides = document.querySelectorAll('.slide');
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+        // Function to handle radio button changes
+        const handleRadioChange = (e) => {
+          slides.forEach(slide => {
+            slide.style.display = 'none';
+          });
+          
+          const currentSlide = document.getElementById(`${e.target.id}-content`);
+          currentSlide.style.display = 'block';
+        }
+
+        // Add event listener to radio buttons
+        radioButtons.forEach(radioButton => {
+          radioButton.addEventListener('change', handleRadioChange);
+        });
+
+    </script>
+
+    <div id="carousel">
     <section>
         
         <input class="zoom" type="radio" name="position" checked />
