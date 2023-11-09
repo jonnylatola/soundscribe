@@ -83,6 +83,17 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
     }
     
     main#carousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    main#carousel .item_random {
+        flex: 0 0 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    main#carousel {
       grid-row: 1 / 1;
       grid-column: 1 / 8;
       width: 100vw;
@@ -182,23 +193,62 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
     
     <script>
 
-        const slides = document.querySelectorAll('.slide');
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const container = document.querySelector('.carousel-container');
+            const items = document.querySelectorAll('.carousel-container .item_random');
 
-        // Function to handle radio button changes
-        const handleRadioChange = (e) => {
-          slides.forEach(slide => {
-            slide.style.display = 'none';
-          });
-          
-          const currentSlide = document.getElementById(`${e.target.id}-content`);
-          currentSlide.style.display = 'block';
-        }
+            let startX = 0;
+            let currentTranslateX = 0;
 
-        // Add event listener to radio buttons
-        radioButtons.forEach(radioButton => {
-          radioButton.addEventListener('change', handleRadioChange);
-        });
+            container.addEventListener('mousedown', startSwipe);
+            container.addEventListener('touchstart', startSwipe);
+
+            function startSwipe(e) {
+                startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+                currentTranslateX = getCurrentTranslateX();
+
+                container.addEventListener('mousemove', swipe);
+                container.addEventListener('touchmove', swipe, { passive: true });
+                container.addEventListener('mouseup', endSwipe);
+                container.addEventListener('touchend', endSwipe);
+            }
+
+            function swipe(e) {
+                const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+                const translateX = currentTranslateX + x - startX;
+
+                container.style.transform = `translateX(${translateX}px)`;
+            }
+
+            function endSwipe(e) {
+                const x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
+                const distance = x - startX;
+
+                if (Math.abs(distance) > 100) {
+                    const direction = distance > 0 ? -1 : 1;
+                    const currentIndex = Array.from(items).findIndex((item) => item.classList.contains('zoom'));
+                    const nextIndex = currentIndex + direction;
+            
+                    if (nextIndex >= 0 && nextIndex < items.length) {
+                        items[currentIndex].classList.remove('zoom');
+                        items[nextIndex].classList.add('zoom');
+                    }
+                }
+            
+                container.style.transform = `translateX(${currentTranslateX}px)`;
+            
+                container.removeEventListener('mousemove', swipe);
+                container.removeEventListener('touchmove', swipe, { passive: true });
+                container.removeEventListener('mouseup', endSwipe);
+                container.removeEventListener('touchend', endSwipe);
+            }
+
+            function getCurrentTranslateX() {
+                const transformedValue = window.getComputedStyle(container).getPropertyValue('transform');
+                const matrix = transformedValue.split('(')[1].split(')')[0].split(',');
+
+                return parseInt(matrix[4]);
+            }
+
 
     </script>
 
