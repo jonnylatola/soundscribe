@@ -59,231 +59,330 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <!--div class="container"-->
     <style>
 
-   .zoom:hover {
-	-ms-transform: scale(1.5); /* IE 9 */
-	-webkit-transform: scale(1.5); /* Safari 3-8 */
-	transform: scale(1.5); 
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
 }
-    
-    body {
-        font-size: medium;
-        align-items: center;
-    }
-    p{
-        font-size: small;
-    }
-    section {
-      height: 600px;
-      margin: 20px;
-      display: grid;
-      grid-template-rows: 500px 200px;
-      grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-      align-items: center;
-      justify-items: center;
-      overflow: none;
-    }
-    
-    .carousel {
-            display: flex;
-            transition: transform 1.5s ease;
-        }
+p {
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
 
-    .carousel-container {
-        display: flex;
-        transition: transform 1.5s ease;
-        overflow: hidden;
-        width: 100%;
-    }
+h2, h1 {
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
 
-    .carousel-container .item_random {
-        flex: 0 0 100%;
-        transition: transform 0.5s ease-in-out;
-    }
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
 
-    main#carousel {
-      grid-row: 1 / 1;
-      grid-column: 1 / 8;
-      width: 100vw;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: none;
-      transform-style: preserve-3d;
-      perspective: 600px;
-      --items: 5;
-      --middle: 3;
-      --position: 1;
-      pointer-events: none;
-    }
-    
-    div.item_random {
-      border-radius:15px;
-      border:1px solid darkred;
-      padding: 40px 40px 40px;
-      color:lightgrey;
-      font-size: small;
-      position: absolute;
-      width: 400px;
-      height: auto;
-      background-color: coral;
-      --r: calc(var(--position) - var(--offset));
-      --abs: max(calc(var(--r) * -1), var(--r));
-      transition: all 0.25s linear;
-      transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-300px * var(--r)));
-      z-index: calc((var(--position) - var(--abs)));
-    }
-    
-    div.item_random:nth-of-type(1) {
-      --offset: 1;
-      background-color: #1c1414;
-    }
-    div.item_random:nth-of-type(2) {
-      --offset: 2;
-      background-color: #1c1212;
-    }
-    div.item_random:nth-of-type(3) {
-      --offset: 3;
-      background-color: #231515;
-    }
-    div.item_random:nth-of-type(4) {
-      --offset: 4;
-      background-color: #2c1919;
-    }
-    div.item_random:nth-of-type(5) {
-      --offset: 5;
-      background-color: #331a1a;
-    }
-    
-    input:nth-of-type(1) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-    input:nth-of-type(1):checked ~ main#carousel {
-      --position: 1;
-    }
-    
-    input:nth-of-type(2) {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-    }
-    input:nth-of-type(2):checked ~ main#carousel {
-      --position: 2;
-    }
-    
-    input:nth-of-type(3) {
-      grid-column: 4 /5;
-      grid-row: 2 / 3;
-    }
-    input:nth-of-type(3):checked ~ main#carousel {
-      --position: 3;
-    }
-    
-    input:nth-of-type(4) {
-      grid-column: 5 / 6;
-      grid-row: 2 / 3;
-    }
-    input:nth-of-type(4):checked ~ main#carousel {
-      --position: 4;
-    }
-    
-    input:nth-of-type(5) {
-      grid-column: 6 / 7;
-      grid-row: 2 / 3;
-    }
-    input:nth-of-type(5):checked ~ main#carousel {
-      --position: 5;
-    }
-    
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+body {
+  max-width: 37.5rem;
+  margin: 20px auto;
+  padding: 20px auto;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  box-sizing: border-box;
+  border-radius: 20px;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #251a1ac9;
+  counter-increment: item;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #251a1ac9;
+}
+
+.carousel__slide:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+
     </style>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const carouselContainer = document.getElementById("carousel");
-          // const carousel = document.getElementById("carousel");
-  
-          let startX;
-  
-          carouselContainer.addEventListener("touchstart", function (e) {
-              startX = e.touches[0].clientX;
-          });
-  
-          carouselContainer.addEventListener("touchend", function (e) {
-              const endX = e.changedTouches[0].clientX;
-              const deltaX = startX - endX;
-  
-              if (deltaX > 50) {
-                  moveToNextSlide();
-              } else if (deltaX < -50) {
-                  moveToPrevSlide();
-              }
-          });
-  
-          function moveToNextSlide() {
-              const currentRadio = document.querySelector('input[name="position"]:checked');
-              const nextRadio = currentRadio.nextElementSibling || document.querySelector('input[name="position"]:first-child');
-              nextRadio.checked = true;
-          }
-  
-          function moveToPrevSlide() {
-              const currentRadio = document.querySelector('input[name="position"]:checked');
-              const prevRadio = currentRadio.previousElementSibling || document.querySelector('input[name="position"]:last-child');
-              prevRadio.checked = true;
-          }
-      });
-  </script>
 
-    <div  id="carousel-container">
-    <section>
-        
-        <input class="zoom" type="radio" name="position" checked />
-        <input class="zoom" type="radio" name="position" />
-        <input class="zoom" type="radio" name="position" />
-        <input class="zoom" type="radio" name="position" />
-        <input class="zoom" type="radio" name="position" />
-        <main class="zoom" id="carousel">
-          <div class="item_random zoom"><h4>About SoundScribe</h4><p></p>
-            <p>
-                At Sounscribe, we are passionate about the powerful language of music. Established in 2022, we are a team of three musicians who have been close friends for over a decade. Each of us brought our unique musical talents to the table, having worked individually with prominent artists in South Africa. Our journeys were separate, but they converged into a shared vision.
-            </p>
-        
+<h1>Let's Work Together</h1>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <h2>About SoundScribe</h2>
+        <p>At Sounscribe, we are passionate about the powerful language of music. Established in 2022, we are a team of three musicians who have been close friends for over a decade. Each of us brought our unique musical talents to the table, having worked individually with prominent artists in South Africa. Our journeys were separate, but they converged into a shared vision.<br>
+        <p><b>Our Approach:</b>
+We believe that music is not just an accompaniment; it's a partner in storytelling. Every composition we create is a result of meticulous attention to detail, collaboration, and a deep understanding of the client's vision. We work closely with content creators to ensure that our music becomes an integral part of the narrative.</p>
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
       </div>
-        <div class="item_random zoom"><h4>Our Story</h4><p></p>
-            <p>
-                With backgrounds in various musical genres and experiences working with renowned artists, we realized that our collective strength lay in orchestration. It was this realization that sowed the seeds for Sounscribe. Drawing upon our individual strengths, we decided to explore the world of film, advertisements, and visual content creation.
-            </p>
-            <p></p>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <h2>What We Do</h2>
+      <p><b>Film Score:</b> We understand that every frame tells a story, and our original compositions are designed to complement and amplify the emotions on screen. Whether it's an epic adventure or an intimate drama, we have the perfect sound to enhance your vision.<br>
+<b>Ad Campaigns:</b> In the fast-paced world of advertising, the right music can make a world of difference. We create memorable, catchy, and emotionally resonant jingles that leave a lasting impact.<p>
+<b>Visual Content:</b> From documentaries to video games, we're adept at tailoring music to suit the unique demands of any visual project. Our versatile team ensures that the music always fits the mood and narrative.</p>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <h2>Why Choose Sounscribe</h2>
       <p>
-        Since our inception, we have harmonized our talents, infusing our compositions with the rich tapestry of experiences gained from years in the music industry. Our friendship, mutual respect, and shared love for storytelling through music are the cornerstones of Sounscribe.
+        <b>Emotional Impact:</b> We understand that music has the power to move, inspire, and captivate. Our compositions are meticulously designed to bring out the desired emotions in every scene.<br>
+<p><b>Professional Excellence:</b> With years of experience and a team of dedicated professionals, we ensure that every piece of music we create is of the highest quality.<br><p>
+        <b>Collaborative Partnership:</b> We value our clients as partners and work hand-in-hand to bring their visions to life through music.
       </p>
-    </div>
-      <div class="item_random"><h4>What We Do</h4><p></p>
-        <p>
-            Film Score: We understand that every frame tells a story, and our original compositions are designed to complement and amplify the emotions on screen. Whether it's an epic adventure or an intimate drama, we have the perfect sound to enhance your vision.
-        </p>    
-        <p></p>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <h2>Our Story</h2>
       <p>
-        Ad Campaigns: In the fast-paced world of advertising, the right music can make a world of difference. We create memorable, catchy, and emotionally resonant jingles that leave a lasting impact.
+With backgrounds in various musical genres and experiences working with renowned artists, we realized that our collective strength lay in orchestration. <br>It was this realization that sowed the seeds for Sounscribe. Drawing upon our individual strengths, we decided to explore the world of film, advertisements, and visual content creation.
       </p>
-            <p></p>
-      <p>
-        Visual Content: From documentaries to video games, we're adept at tailoring music to suit the unique demands of any visual project. Our versatile team ensures that the music always fits the mood and narrative.
-      </p></div>
-      <div class="item_random"><h4>Our Approach</h4><p></p>
-      
-      We believe that music is not just an accompaniment; it's a partner in storytelling. Every composition we create is a result of meticulous attention to detail, collaboration, and a deep understanding of the client's vision. We work closely with content creators to ensure that our music becomes an integral part of the narrative.</p></div>
-      <div class="item_random"><h4>Why Choose Sounscribe</h4><p></p>
-      <p>
-      Emotional Impact: We understand that music has the power to move, inspire, and captivate. Our compositions are meticulously designed to bring out the desired emotions in every scene.</p>
-        <p></p>
-      <p>Professional Excellence: With years of experience and a team of dedicated professionals, we ensure that every piece of music we create is of the highest quality.</p>
-      <p></p>
-      <p>Collaborative Partnership: We value our clients as partners and work hand-in-hand to bring their visions to life through music.</p>
-      </div>
-          <main>
-          </section>
-    </div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
   
     <!--End of About Us section-->
         
