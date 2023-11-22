@@ -170,7 +170,7 @@ ol, li {
   perspective: 100px;
 }
 
-.carousel__viewport {
+.item_random__viewport {
   position: absolute;
   top: 0;
   right: 0;
@@ -183,7 +183,7 @@ ol, li {
   scroll-snap-type: x mandatory;
 }
 
-.carousel__slide {
+.item_random__slide {
   position: relative;
   overflow: scroll;
   flex: 0 0 100%;
@@ -193,11 +193,11 @@ ol, li {
   counter-increment: item;
 }
 
-.carousel__slide:nth-child(even) {
+.item_random__slide:nth-child(even) {
   background-color: #251a1ac9;
 }
 
-.carousel__slide:before {
+.item_random__slide:before {
   position: absolute;
   padding-top: 100%;
   top: 100%;
@@ -217,30 +217,30 @@ ol, li {
 }
 
 @media (hover: hover) {
-  .carousel__snapper {
+  .item_random__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
-  .carousel__slide:last-child .carousel__snapper {
+  .item_random__slide:last-child .carousel__snapper {
     animation-name: tostart, snap;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
+  .item_random__snapper {
     animation-name: none;
   }
 }
 
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
+.item_random:hover .item_random__snapper,
+.item_random:focus-within .item_random__snapper {
   animation-name: none;
 }
 
-.carousel__navigation {
+.item_random__navigation {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -248,12 +248,12 @@ ol, li {
   text-align: center;
 }
 
-.carousel__navigation-list,
-.carousel__navigation-item {
+.item_random__navigation-list,
+.item_random__navigation-item {
   display: inline-block;
 }
 
-.carousel__navigation-button {
+.item_random__navigation-button {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -265,10 +265,10 @@ ol, li {
   transition: transform 0.1s;
 }
 
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
+.item_random::before,
+.item_random::after,
+.item_random__prev,
+.item_random__next {
   position: absolute;
   top: 0;
   margin-top: 37.5%;
@@ -280,18 +280,18 @@ ol, li {
   outline: 0;
 }
 
-.carousel::before,
-.carousel__prev {
+.item_random::before,
+.item_random__prev {
   left: -1rem;
 }
 
-.carousel::after,
-.carousel__next {
+.item_random::after,
+.item_random__next {
   right: -1rem;
 }
 
-.carousel::before,
-.carousel::after {
+.item_random::before,
+.item_random::after {
   content: '';
   z-index: 1;
   background-color: #333;
@@ -305,11 +305,11 @@ ol, li {
   pointer-events: none;
 }
 
-.carousel::before {
+.item_random::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-.carousel::after {
+.item_random::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 .section#aboutus {
