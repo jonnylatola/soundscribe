@@ -788,14 +788,14 @@ function openBrowsePopup(){
                 background: 'var(--card)',
                 color: '#fff',
                 width: 600,
-                showConfirmButton: false
-            });
+                showConfirmButton: false,
+                didOpen: () => {
+                    setupPopupPlayer();
+                }
+                });
 
-            // setup controls and waveform after modal opens
-            setupPopupPlayer();
-        }
 
-        let waveSurfer, popupAudio;
+        let waveSurfer, popupPlay;
 
         function setupPopupPlayer(){
             const pp = document.getElementById('popup-player');
@@ -812,17 +812,19 @@ function openBrowsePopup(){
             });
 
             window.popupPlay = function(src, title) {
-                if (popupAudio && popupAudio.src !== (new URL(src, location.href)).href) {
-                    // Stop previous instance
-                    waveSurfer.stop();
-                    waveSurfer.load(src);
-                } else {
-                    waveSurfer.play();
-                }
-                pp.style.display = 'block';
-                ppTitle.textContent = title;
+
+            pp.style.display = 'block';
+            ppTitle.textContent = title;
+            ppBtn.textContent = 'Loading...';
+        
+            waveSurfer.load(src);
+        
+            waveSurfer.once('ready', () => {
+                waveSurfer.play();
                 ppBtn.textContent = '⏸';
-            };
+            });
+        };
+
 
             ppBtn.addEventListener('click', () => {
                 if (!waveSurfer.isReady) return;
